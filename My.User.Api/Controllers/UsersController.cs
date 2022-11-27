@@ -7,6 +7,7 @@ namespace My.User.Api.Controllers
     public class UsersController : ControllerBase
     {
         private readonly ILogger<UsersController> _logger;
+
         private List<Models.User> _users = new() {
             new Models.User() { Id= 1, Name = "Jon", Email = "jon.doe@email.com" },
             new Models.User() { Id= 2, Name = "Jane", Email = "jane.doe@email.com" }
