@@ -80,7 +80,7 @@ namespace My.User.Api.Controllers
                 return NotFound();
             }
 
-            // Update user here
+            // Update user here            
 
             return NoContent();
         }
@@ -96,6 +96,7 @@ namespace My.User.Api.Controllers
             }
 
             // Delete user here
+            _users.Remove(existingUser);
 
             return NoContent();
         }
